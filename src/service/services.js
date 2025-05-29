@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 
 const URL = 'https://tuiter.fragua.com.ar/api/v1';
 const token= localStorage.getItem('appToken')
-const appToken= '7f968f326b867a68e9e37cf7fe6510f85439828412e26793e982bf8648f5ba3b'
+const appToken= process.env.REACT_APP_APP_TOKEN;
   //Get para los post
   export const GetPosts = async ()=>{
     try{
