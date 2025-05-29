@@ -15,6 +15,7 @@ const NavBar = () => {
   }
   const logOut=()=>{
     localStorage.removeItem('appToken')
+    window.location.reload()
 
   }
   return (

@@ -61,7 +61,7 @@ const Register = () => {
   <Card className='mx-auto' style={{ maxWidth: '400px' }}>
     <div className='p-3'>
       {msg.type && (
-        <Alert variant={msg.type} className='mb-3 d-flex align-items-center'>
+        <Alert severity={msg.type} className='mb-3 d-flex align-items-center'>
           {msg.icon && <span className='me-2'>{msg.icon}</span>}
           {msg.msg}
         </Alert>

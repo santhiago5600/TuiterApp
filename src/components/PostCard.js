@@ -82,7 +82,7 @@ function PostCard(props) {
 
   return (<>
       {stared && (
-        <Alert variant='success' className='mb-4 d-flex align-items-center'>
+        <Alert severity='success' className='mb-4 d-flex align-items-center'>
           <Check size={20} className='me-2' />
           Autor agregado a favoritos
         </Alert>
@@ -151,7 +151,7 @@ function PostCard(props) {
 
         {/* Success alert */}
         {showSuccess && (
-          <Alert variant='success' className='mt-3 d-flex align-items-center'>
+          <Alert severity='success' className='mt-3 d-flex align-items-center'>
             <Check size={20} className='me-2' />
             Respuesta publicada
           </Alert>

@@ -47,7 +47,7 @@ function Loginpage() {
         localStorage.setItem('appToken', token);
         setMsg({
                         type:'success',
-                        msg:'usuario creado correctamente',
+                        msg:'Log in exitoso',
                         icon:<Check fontSize='inherit' />
                     })
         setLoading(false);
@@ -68,7 +68,7 @@ function Loginpage() {
   return (
   <>
   {msg.type && (
-    <Alert variant={msg.type} className='mb-3 d-flex align-items-center'>
+    <Alert severity={msg.type} className='mb-3 d-flex align-items-center'>
       {msg.icon && <span className='me-2'>{msg.icon}</span>}
       {msg.msg}
     </Alert>
