@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Check,X } from 'lucide-react';
 import { Alert } from '@mui/material';
 import { Button, Form, Card } from 'react-bootstrap'
+import Footer from '../components/Footer.js'
 
 
 function Loginpage() {
@@ -73,9 +74,7 @@ function Loginpage() {
       {msg.msg}
     </Alert>
   )}
-
   <h1 className='text-primary mb-4 text-center'>Tuiter App</h1>
-
   <Card className='mx-auto' style={{ maxWidth: '400px' }}>
     <Card.Body>
       <Card.Title className='mb-4'>Login</Card.Title>
@@ -116,8 +115,8 @@ function Loginpage() {
         Regístrate
       </Button>
     </Card.Body>
+    <Footer/>
   </Card>
-
     </>
   );
 }

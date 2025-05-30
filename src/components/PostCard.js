@@ -89,7 +89,6 @@ function PostCard(props) {
       )}
 
       <div className='bg-white shadow rounded p-4 mb-4'>
-        {/* Header: avatar + name + star button */}
         <Row className='align-items-center mb-3'>
           <Col xs='auto' className='d-flex align-items-center gap-3'>
             <Image
@@ -112,10 +111,9 @@ function PostCard(props) {
           </Col>
         </Row>
 
-        {/* Post message */}
         <p className='mb-4 text-secondary'>{props.post.message}</p>
 
-        {/* Interaction row: input + buttons */}
+        
         <Row className='align-items-center'>
           <Col>
             <Form.Control
@@ -149,7 +147,7 @@ function PostCard(props) {
           </Col>
         </Row>
 
-        {/* Success alert */}
+        
         {showSuccess && (
           <Alert severity='success' className='mt-3 d-flex align-items-center'>
             <Check size={20} className='me-2' />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Loginpage from './pages/Loginpage.js';
 import Homepage from './pages/Homepage.js';
 import User from './pages/User.js';
@@ -6,7 +6,10 @@ import Register from './pages/Register.js';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import EditUser from './pages/EditUser.js';
 
+
 function App() {
+
+  const [api, setApi]= useState(false)
 
   const token= localStorage.getItem('appToken')
 

@@ -74,7 +74,7 @@ const EditUser = () => {
     }
   return (
     <Container className='p-4'>
-      {/* Alert Message */}
+
       {msg.type !== '' && (
         <Alert variant={msg.type}>
           <div className='d-flex align-items-center'>
@@ -84,7 +84,7 @@ const EditUser = () => {
         </Alert>
       )}
 
-      {/* Header with Back Button */}
+
       <div className='d-flex align-items-center mb-4'>
         <Button variant='outline-secondary' onClick={back} className='me-2'>
           <ArrowLeft />
@@ -92,7 +92,7 @@ const EditUser = () => {
         <h2 className='mb-0'>Editar Usuario</h2>
       </div>
 
-      {/* Form */}
+
       <Form>
         <Form.Group className='mb-3'>
           <Form.Label>Nombre</Form.Label>
